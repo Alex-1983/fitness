@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  padding-right: 103px;
+  padding-left: 103px;
+  width: 100%;
+  max-width: $screen-lg;
+
+  @media (max-width: $screen-md) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+}
