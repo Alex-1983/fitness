@@ -1,0 +1,27 @@
+// Базовая типографика
+
+$font-family: "RobotoCondensed", "Arial", sans-serif;
+$font-family-secondary: "BebasNeue", "Arial", sans-serif;
+
+$font-size:                   16px;
+$line-height:                 1.5;
+
+
+// Семантические цвета
+
+$white:                       #f9fbfd;
+$blue-dark:                   #102654;
+$blue:                        #1c3374;
+$red:                         #b80127;
+$footer-bg-color:             #030a1a;
+
+// Ширины
+
+$screen-sm:                   767px;
+$screen-md:                   1365px;
+$screen-lg:                   1366px;
+
+// Ретина
+
+$retina-dpi:                  144dpi;
+$retina-dppx:                 1.5dppx;

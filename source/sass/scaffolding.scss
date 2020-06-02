@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: 400;
+  font-style: normal;
+
+  word-break: break-word;
+
+  color: $blue-dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -6,4 +6,4 @@
 
 js/
 | - [vendor/*.js файлы]
-| - [main/*.js файлы]
+| - [main/.js]
