@@ -20,7 +20,10 @@
     <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    </script>
   </head>
 
   <body>
@@ -34,7 +37,7 @@
             <a class="intro__logo">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/logo-sm.svg">
-                <source media="(max-width: 1365px)" srcset="img/logo-md.svg">
+                <source media="(max-width: 1199px)" srcset="img/logo-md.svg">
                 <img src="img/logo-lg.svg" width="89" height="20" alt="логотип">
               </picture>
             </a>
@@ -63,8 +66,39 @@
           </ul>
         </div>
       </section>
+      <section class="gym">
+        <div class="container gym__inner">
+          <div class="gym__text-block">
+            <h2>Тренажерный зал</h2>
+            <div class="gym__text-head">
+              <p>Просторный зал площадью 900 кв/м</p>
+            </div>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <div class="gym__text-low">
+              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+          </div>
+          <div class="gym__img-wrap">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-img-sm@1x.webp, img/gym-img-sm@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1190px)" srcset="img/gym-img-md@1x.webp, img/gym-img-md@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-img-lg@1x.webp, img/gym-img-lg@2x.webp 2x">
+              <!-- 1х: 320px; 2x: 640px -->
+              <source media="(max-width: 767px)" srcset="img/gym-img-sm@1x.jpg, img/gym-img-sm@2x.jpg 2x">
+              <!-- 1х: 678px; 2x: 1356px -->
+              <source media="(max-width: 1199px)" srcset="img/gym-img-md@1x.jpg, img/gym-img-md@2x.jpg 2x">
+              <!-- 1х: 660px; 2x: 1320px -->
+              <img src="img/gym-img-lg@1x.jpg" srcset="img/gym-img-lg@2x.jpg 2x" width="660" height="401" alt="Фото пингвинов">
+            </picture>
+          </div>
+          <div class="gym__video-wrap">
+            <button class="btn gym__btn" type="button">
+              <span class="visually-hidden">Смотреть</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-
   </body>
 
 </html>

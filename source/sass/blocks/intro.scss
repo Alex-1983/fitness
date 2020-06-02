@@ -64,7 +64,7 @@
 
   background-image: url("../img/intro-sportsman-lg@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top 51px right 303px;
+  background-position: top 51px right 210px;
   background-size: 500px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -307,8 +307,8 @@
 
 .intro__social {
   position: absolute;
-  right: 95px;
-  bottom: 75px;
+  right: 5px;
+  bottom: 77px;
 
   @media (max-width: $screen-md) {
     display: none;
