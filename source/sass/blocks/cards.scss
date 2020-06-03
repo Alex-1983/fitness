@@ -1,0 +1,207 @@
+.cards {
+  display: none;
+  flex-wrap: wrap;
+
+  &--active {
+    display: flex;
+
+    @media (max-width: $screen-md) {
+      margin-right: auto;
+      margin-left: auto;
+      width: 65%;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+}
+
+.cards__item {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  width: 360px;
+  min-height: 448px;
+
+  border: 7px solid transparent;
+  background-color: $white;
+
+  @media (max-width: $screen-md) {
+    margin-right: 0;
+    margin-bottom: 38px;
+    width: 100%;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 35px;
+    min-height: 384px;
+  }
+
+  &:hover {
+    border-image: linear-gradient(135deg, #d10a42 5%, #00359f 100%);
+    border-image-slice: 1;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.cards__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 56px 45px 60px;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: $screen-sm) {
+    padding: 43px 36px 48px;
+  }
+}
+
+.cards__container h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+
+  color: $blue-dark;
+
+  @media (max-width: $screen-sm) {
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
+
+.cards__container span {
+  display: block;
+
+  margin-bottom: 65px;
+
+  font-size: $font-size;
+  line-height: $line-height;
+
+  color: #495a7d;
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 53px;
+  }
+}
+
+.cards__price {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+
+  padding-right: 90px;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: $line-height;
+
+  text-align: right;
+  vertical-align: top;
+
+  color: #103aae;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 45px;
+
+    width: 30px;
+    height: 42px;
+
+    background-image: url("../img/ruble.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  @media (max-width: $screen-md) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 45px;
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 32px;
+    font-size: 48px;
+
+    &::after {
+      top: 15px;
+      right: -6px;
+      background-image: url("../img/ruble-sm.svg");
+    }
+  }
+}
+
+.cards__price-big {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+
+  display: block;
+
+  margin: 0;
+  width: 100%;
+
+  font-size: 100px;
+  font-weight: 700;
+  line-height: $line-height;
+
+  transform: translateX(-50%);
+
+  opacity: 0.48;
+  color: #e8e8e8;
+
+  @media (max-width: $screen-sm) {
+    top: 110px;
+    font-size: 80px;
+  }
+}
+
+.cards__link {
+  margin: auto;
+  margin-bottom: 0;
+  padding: 24px 10px;
+  width: 209px;
+  min-height: 64px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $blue-dark;
+  border: 2px solid $blue-dark;
+  background-color: $white;
+
+  @media (max-width: $screen-md) {
+    width: 61%;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 100%;
+  }
+
+  &:hover {
+    color: $white;
+    border: none;
+    background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+}
