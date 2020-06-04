@@ -865,43 +865,43 @@ input[type="radio"].visually-hidden {
   padding-top: 116px;
   min-height: 934px;
   text-align: center;
-  background-image: url("../img/abonnement-bg-lg@1x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #fff));
-  background-image: url("../img/abonnement-bg-lg@1x.png"), linear-gradient(180deg, #f8f9fc 91%, #fff 91%);
+  background-image: url("../img/abonnement-bg-lg@1x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #ffffff));
+  background-image: url("../img/abonnement-bg-lg@1x.png"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
   background-repeat: no-repeat;
   background-position: bottom -68px right, top left;
   background-size: 289px auto, auto; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .abonnements {
-      background-image: url("../img/abonnement-bg-lg@2x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #fff));
-      background-image: url("../img/abonnement-bg-lg@2x.png"), linear-gradient(180deg, #f8f9fc 91%, #fff 91%); } }
+      background-image: url("../img/abonnement-bg-lg@2x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #ffffff));
+      background-image: url("../img/abonnement-bg-lg@2x.png"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%); } }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .abonnements {
-      background-image: url("../img/abonnement-bg-lg@1x.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #fff));
-      background-image: url("../img/abonnement-bg-lg@1x.webp"), linear-gradient(180deg, #f8f9fc 91%, #fff 91%); } }
+      background-image: url("../img/abonnement-bg-lg@1x.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #ffffff));
+      background-image: url("../img/abonnement-bg-lg@1x.webp"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%); } }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .abonnements {
-      background-image: url("../img/abonnement-bg-lg@2x.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #fff));
-      background-image: url("../img/abonnement-bg-lg@2x.webp"), linear-gradient(180deg, #f8f9fc 91%, #fff 91%); } }
+      background-image: url("../img/abonnement-bg-lg@2x.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(91%, #f8f9fc), color-stop(91%, #ffffff));
+      background-image: url("../img/abonnement-bg-lg@2x.webp"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%); } }
   @media (max-width: 1199px) {
     .abonnements {
       padding-top: 98px;
       min-height: 1845px;
-      background-image: url("../img/abonnement-bg-md@1x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #fff));
-      background-image: url("../img/abonnement-bg-md@1x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #fff 96.5%);
+      background-image: url("../img/abonnement-bg-md@1x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #ffffff));
+      background-image: url("../img/abonnement-bg-md@1x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%);
       background-position: bottom -60px right, top left;
       background-size: 348px auto, auto; } }
   @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
     .abonnements {
-      background-image: url("../img/abonnement-bg-md@2x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #fff));
-      background-image: url("../img/abonnement-bg-md@2x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #fff 96.5%); } }
+      background-image: url("../img/abonnement-bg-md@2x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #ffffff));
+      background-image: url("../img/abonnement-bg-md@2x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%); } }
   @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
     .abonnements {
-      background-image: url("../img/abonnement-bg-md.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #fff));
-      background-image: url("../img/abonnement-bg-md.webp"), linear-gradient(180deg, #f8f9fc 96.5%, #fff 96.5%); } }
+      background-image: url("../img/abonnement-bg-md.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #ffffff));
+      background-image: url("../img/abonnement-bg-md.webp"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%); } }
   @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
     .abonnements {
-      background-image: url("../img/abonnement-bg-md@2x.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #fff));
-      background-image: url("../img/abonnement-bg-md@2x.webp"), linear-gradient(180deg, #f8f9fc 96.5%, #fff 96.5%); } }
+      background-image: url("../img/abonnement-bg-md@2x.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(96.5%, #f8f9fc), color-stop(96.5%, #ffffff));
+      background-image: url("../img/abonnement-bg-md@2x.webp"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%); } }
   @media (max-width: 767px) {
     .abonnements {
       padding-top: 70px;
@@ -1130,3 +1130,218 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     border: none;
     background-image: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%); }
+
+.games {
+  padding-top: 36px;
+  padding-bottom: 100px; }
+  @media (max-width: 1199px) {
+    .games {
+      padding-top: 33px;
+      padding-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .games {
+      padding-top: 70px; } }
+
+.games__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 767px) {
+    .games__inner {
+      display: block;
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.games__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px; }
+  @media (max-width: 1199px) {
+    .games__wrap {
+      margin-bottom: 0; } }
+  @media (max-width: 767px) {
+    .games__wrap {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 275px; } }
+
+.games__text-block {
+  position: relative;
+  padding: 83px 80px 165px;
+  width: 500px;
+  min-height: 500px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #ed0233; }
+  @media (max-width: 1199px) {
+    .games__text-block {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      padding: 49px 45px 100px;
+      width: 43%;
+      min-height: 292px; } }
+  @media (max-width: 767px) {
+    .games__text-block {
+      width: 100%; } }
+
+.games__text-block p {
+  font-size: 18px; }
+  @media (max-width: 767px) {
+    .games__text-block p {
+      padding-right: 13px;
+      text-align: center; } }
+
+.games__wrap span {
+  width: 210px;
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 0.03em; }
+  @media (max-width: 1199px) {
+    .games__wrap span {
+      width: 117px;
+      font-size: 52px;
+      line-height: 52px; } }
+
+.games__date-container {
+  margin-left: auto;
+  width: 92px; }
+  @media (max-width: 1199px) {
+    .games__date-container {
+      width: 56px; } }
+
+.games__date-container span {
+  position: relative;
+  display: block;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  width: auto;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5; }
+  .games__date-container span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff; }
+  @media (max-width: 1199px) {
+    .games__date-container span {
+      margin-bottom: 1px;
+      padding-bottom: 0;
+      font-size: 12px; } }
+
+.games__date-container time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px; }
+  @media (max-width: 1199px) {
+    .games__date-container time {
+      font-size: 24px;
+      line-height: 27px; } }
+
+.games__date {
+  margin-bottom: 18px;
+  padding-right: 28px; }
+  @media (max-width: 1199px) {
+    .games__date {
+      margin-bottom: 5px;
+      padding-right: 14px; } }
+
+.games__date b {
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4; }
+  @media (max-width: 1199px) {
+    .games__date b {
+      margin-left: 4px;
+      font-size: 10px; } }
+
+.games__text-block p {
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 1199px) {
+    .games__text-block p {
+      font-size: 12px; } }
+
+.games__link {
+  position: absolute;
+  bottom: 84px;
+  left: 50%;
+  padding: 24px 10px;
+  width: 347px;
+  font-size: 12px;
+  line-height: 14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  outline: none; }
+  @media (max-width: 1199px) {
+    .games__link {
+      bottom: 50px;
+      padding-top: 12px;
+      padding-bottom: 13px;
+      width: 70%;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 12px;
+      border-width: 2px; } }
+  .games__link:hover {
+    opacity: 0.7; }
+
+.games__img {
+  width: 660px;
+  background-image: url("../img/games-bg-lg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-lg@2x.jpg"); } }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-lg@1x.webp"); } }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-lg@2x.webp"); } }
+  @media (max-width: 1199px) {
+    .games__img {
+      width: 100%;
+      background-image: url("../img/games-bg-md@1x.jpg");
+      background-position: center; } }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-md@2x.jpg"); } }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-md@1x.webp"); } }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-md@2x.webp"); } }
+  @media (max-width: 767px) {
+    .games__img {
+      min-height: 292px;
+      background-image: url("../img/games-bg-sm@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-sm@2x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-sm@1x.webp"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .games__img {
+      background-image: url("../img/games-bg-sm@2x.webp"); } }
