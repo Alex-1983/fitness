@@ -1,57 +1,54 @@
 .abonnements {
   position: relative;
 
-  padding-top: 120px;
-  padding-bottom: 100px;
-  min-height: 855px;
+  padding-top: 116px;
+  min-height: 934px;
 
   text-align: center;
 
-  background-color: $gray;
-  background-image: url("../img/abonnement-bg-lg@1x.png");
+  background-image: url("../img/abonnement-bg-lg@1x.png"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
   background-repeat: no-repeat;
-  background-position: bottom -150px right;
-  background-size: 289px, auto;
+  background-position: bottom -68px right, top left;
+  background-size: 289px auto, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/abonnement-bg-lg@2x.png");
+    background-image: url("../img/abonnement-bg-lg@2x.png"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/abonnement-bg-lg@1x.webp");
+    background-image: url("../img/abonnement-bg-lg@1x.webp"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/abonnement-bg-lg@2x.webp");
+    background-image: url("../img/abonnement-bg-lg@2x.webp"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
   }
 
   @media (max-width: $screen-md) {
     padding-top: 98px;
-    padding-bottom: 65px;
+    min-height: 1845px;
 
-    min-height: 1179px;
-
-    background-image: url("../img/abonnement-bg-md@1x.png");
-    background-position: bottom -123px right 1px;
-    background-size: 348px, auto;
+    background-image: url("../img/abonnement-bg-md@1x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%);
+    background-position: bottom -60px right, top left;
+    background-size: 348px auto, auto;
 
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/abonnement-bg-md@2x.png");
+      background-image: url("../img/abonnement-bg-md@2x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%);
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/abonnement-bg-md.webp");
+      background-image: url("../img/abonnement-bg-md.webp"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%);
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/abonnement-bg-md@2x.webp");
+      background-image: url("../img/abonnement-bg-md@2x.webp"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%);
     }
   }
 
   @media (max-width: $screen-sm) {
     padding-top: 70px;
     min-height: 1487px;
+
     background-image: none;
   }
 }
