@@ -1,0 +1,76 @@
+.toggles__btn {
+  position: absolute;
+  top: 226px;
+
+  z-index: 100;
+
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 40px;
+
+  font-size: 0;
+
+  color: transparent;
+  outline: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+
+    width: 2px;
+    height: 20px;
+
+    background-color: #afafaf;
+  }
+
+  @media (max-width: $screen-md) {
+    top: 210px;
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 198px;
+    height: 30px;
+
+    &::before,
+    &::after {
+      width: 1px;
+      height: 14px;
+    }
+  }
+
+  &--prev {
+    left: 0;
+
+    &::before {
+      top: 4px;
+
+      transform: rotate(45deg) translateX(-50%);
+    }
+
+    &::after {
+      bottom: 4px;
+
+      transform: rotate(-45deg) translateX(-50%);
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    &::before {
+      top: 2px;
+
+      transform: rotate(-45deg) translateX(-50%);
+    }
+
+    &::after {
+      bottom: 4px;
+
+      transform: rotate(45deg) translateX(-50%);
+    }
+  }
+}

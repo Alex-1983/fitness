@@ -2,7 +2,38 @@
 
 (function () {
 
-  // Табы
+  // scroll
+
+  var anchorLinks = document.querySelectorAll('a[href^="#"]:not([href$="#"])');
+
+
+  if (window.smoothscroll) {
+    window.__forceSmoothScrollPolyfill__ = true;
+    window.smoothscroll.polyfill();
+  }
+
+  var initScrollThrough = function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      var currentSection = document.querySelector(event.target.hash);
+
+      if (currentSection) {
+        currentSection.scrollIntoView({behavior: 'smooth'});
+      }
+    });
+  };
+
+  var initAnchors = function (links) {
+    for (var i = 0; i < links.length; i++) {
+      initScrollThrough(links[i]);
+    }
+  };
+
+  initAnchors(anchorLinks);
+
+
+  // Tabs
+
   var PeriodSessions = {
     ONE_MONTH: '1 месяц',
     SIX_MONTH: '6 месяцев',
@@ -71,6 +102,37 @@
 
   for (var i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener('click', onTabClick);
-  }
+  };
+
+  //Slider coach
+
+  var coach = document.querySelector('.coach');
+  var coachSlider = coach.querySelector('.swiper-container');
+  var buttonPrevious = coach.querySelector('.toggles__btn--prev');
+  var buttonNext = coach.querySelector('.toggles__btn--next');
+
+  var coachSwiper = new Swiper(coachSlider, {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    loop: true,
+
+    breakpoints: {
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+    },
+
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrevious
+    },
+
+  });
 
 })();
