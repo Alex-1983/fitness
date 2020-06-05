@@ -20,16 +20,32 @@
 .tabs__item {
   position: relative;
   margin-right: 48px;
+  padding: 0;
   padding-bottom: 12px;
+
+  font-size: 20px;
+  line-height: $line-height;
+
+  text-decoration: none;
+
+  color: $blue-dark;
+  background-color: transparent;
+  outline: none;
 
   @media (max-width: $screen-md) {
     margin-right: 54px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: $line-height;
   }
 
   @media (max-width: $screen-sm) {
     margin-right: 38px;
     padding-right: 7px;
     padding-bottom: 13px;
+
+    font-size: $font-size;
   }
 
   &:nth-child(3n) {
@@ -41,23 +57,9 @@
     margin-bottom: -2px;
     border-bottom: 2px solid #d10a42;
   }
-}
 
-.tabs__link {
-  display: block;
-
-  font-size: 20px;
-  line-height: $line-height;
-  text-decoration: none;
-  color: $blue-dark;
-
-  @media (max-width: $screen-md) {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: $line-height;
-  }
-
-  @media (max-width: $screen-sm) {
-    font-size: $font-size;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }

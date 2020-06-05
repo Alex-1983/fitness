@@ -2,30 +2,30 @@
   position: relative;
 
   padding-top: 116px;
-  min-height: 934px;
+  padding-bottom: 170px;
 
   text-align: center;
 
-  background-image: url("../img/abonnement-bg-lg@1x.png"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
+  background-image: url("../img/abonnement-bg-lg@1x.png"), linear-gradient(180deg, #f8f9fc 92.5%, #ffffff 92.5%);
   background-repeat: no-repeat;
-  background-position: bottom -68px right, top left;
+  background-position: bottom -80px right, top left;
   background-size: 289px auto, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/abonnement-bg-lg@2x.png"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
+    background-image: url("../img/abonnement-bg-lg@2x.png"), linear-gradient(180deg, #f8f9fc 92.5%, #ffffff 92.5%);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/abonnement-bg-lg@1x.webp"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
+    background-image: url("../img/abonnement-bg-lg@1x.webp"), linear-gradient(180deg, #f8f9fc 92.5%, #ffffff 92.5%);
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/abonnement-bg-lg@2x.webp"), linear-gradient(180deg, #f8f9fc 91%, #ffffff 91%);
+    background-image: url("../img/abonnement-bg-lg@2x.webp"), linear-gradient(180deg, #f8f9fc 92.5%, #ffffff 92.5%);
   }
 
   @media (max-width: $screen-md) {
     padding-top: 98px;
-    min-height: 1845px;
+    padding-bottom: 130px;
 
     background-image: url("../img/abonnement-bg-md@1x.png"), linear-gradient(180deg, #f8f9fc 96.5%, #ffffff 96.5%);
     background-position: bottom -60px right, top left;
@@ -47,7 +47,7 @@
 
   @media (max-width: $screen-sm) {
     padding-top: 70px;
-    min-height: 1487px;
+    padding-bottom: 34px;
 
     background-image: none;
   }

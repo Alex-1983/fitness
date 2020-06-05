@@ -32,12 +32,12 @@
 }
 
 .gym__text-block {
-  margin-top: 47px;
-  margin-left: 60px;
-  width: 355px;
+  padding-top: 47px;
+  padding-left: 60px;
+  width: 410px;
 
   @media (max-width: $screen-md) {
-    margin: 0;
+    padding: 0;
     width: 100%;
 
     text-align: center;
@@ -198,15 +198,45 @@
 
   transform: translate(-50%, -50%);
 
+  border: 14px solid transparent;
   border-radius: 50%;
-  background: url("../img/btn-video.svg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg, #003eb7, #b90127);
+  background-clip: padding-box;
+  box-shadow: 0 0 0 1px #8c739c;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 33px;
+
+    width: 0;
+    height: 0;
+
+    border-width: 7.5px 0 7.5px 13px;
+    border-style: solid;
+    border-color: transparent transparent transparent $white;
+  }
 
   @media (max-width: $screen-md) {
+    top: 49%;
+
     width: 73px;
     height: 73px;
 
-    background: url("../img/btn-video-small.svg");
+    border-width: 10px;
+
+    &::before {
+      top: 21px;
+      left: 22px;
+
+      width: 0;
+      height: 0;
+
+      border-width: 5px 0 5px 9px;
+      border-style: solid;
+      border-color: transparent transparent transparent $white;
+    }
   }
 
   &:hover,

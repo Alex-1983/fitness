@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 
   <head>
     <meta charset="UTF-8">
@@ -20,17 +20,10 @@
     <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-
-    </script>
   </head>
 
   <body>
-    <div style="display: none">
-      <include src="build/img/sprite_auto.svg"></include>
-    </div>
-    <main class="main-content">
+    <header class="main-header">
       <section class="intro">
         <div class="container intro__inner">
           <div class="intro__top-row">
@@ -43,29 +36,33 @@
             </a>
             <a class="intro__phone" href="tel:88005555555">8-800-555-55-55</a>
           </div>
-          <div class="intro__text-block">
-            <span>Омск</span>
-            <h1>Фитнес центр</h1>
-            <ul class="list-reset intro__features-list">
-              <li class="intro__features-item">Тренажерный зал</li>
-              <li class="intro__features-item">Групповые занятия</li>
-              <li class="intro__features-item">Кардио-зона</li>
+          <div class="intro__wrap">
+            <div class="intro__text-block">
+              <span>Омск</span>
+              <h1>Фитнес центр</h1>
+              <ul class="list-reset intro__features-list">
+                <li class="intro__features-item">Тренажерный зал</li>
+                <li class="intro__features-item">Групповые занятия</li>
+                <li class="intro__features-item">Кардио-зона</li>
+              </ul>
+              <a class="btn intro__link" href="#">Купить абонемент</a>
+            </div>
+            <ul class="list-reset intro__social">
+              <li class="intro__social-item">
+                <a href="https://www.facebook.com" target="_blank" title="Фейсбук">Fb</a>
+              </li>
+              <li class="intro__social-item">
+                <a href="https://vk.com" target="_blank" title="Вконтакте">Vk</a>
+              </li>
+              <li class="intro__social-item">
+                <a href="https://www.instagram.com" target="_blank" title="Инстаграм">Ig</a>
+              </li>
             </ul>
-            <a class="btn intro__link" href="#">Купить абонемент</a>
           </div>
-          <ul class="list-reset intro__social">
-            <li class="intro__social-item">
-              <a href="https://www.facebook.com" target="_blank" title="Фейсбук">Fb</a>
-            </li>
-            <li class="intro__social-item">
-              <a href="https://vk.com" target="_blank" title="Вконтакте">Vk</a>
-            </li>
-            <li class="intro__social-item">
-              <a href="https://www.instagram.com" target="_blank" title="Инстаграм">Ig</a>
-            </li>
-          </ul>
         </div>
       </section>
+    </header>
+    <main class="main-content">
       <section class="gym">
         <div class="container gym__inner">
           <div class="gym__text-block">
@@ -93,30 +90,22 @@
           </div>
           <div class="gym__video-wrap">
             <video></video>
-            <button class="btn gym__btn" type="button">
-              <span class="visually-hidden">Смотреть</span>
-            </button>
+            <button class="btn gym__btn" type="button" aria-label="Смотреть"></button>
           </div>
         </div>
       </section>
       <section class="abonnements">
         <div class="container abonnements__inner">
           <h2>Абонементы</h2>
-          <ul class="list-reset abonnements__tabs-list tabs">
-            <li class="tabs__item tabs__item--active">
-              <a class="tabs__link" href="#">1 месяц</a>
-            </li>
-            <li class="tabs__item">
-              <a class="tabs__link" href="#">6 месяцев</a>
-            </li>
-            <li class="tabs__item">
-              <a class="tabs__link" href="#">12 месяцев</a>
-            </li>
-          </ul>
-          <ul class="list-reset abonnements__cards-list cards cards--active">
+          <div class="abonnements__tabs-list tabs">
+            <button class="btn tabs__item tabs__item--active" type="button">1 месяц</button>
+            <button class="btn tabs__item" type="button">6 месяцев</button>
+            <button class="btn tabs__item" type="button">12 месяцев</button>
+          </div>
+          <ul class="list-reset abonnements__cards-list cards">
             <li class="cards__item">
               <h3>С тренером</h3>
-              <span>12 занятий</span>
+              <span class="cards__number">12 занятий</span>
               <div class="cards__price-wrap">
                 <b class="cards__price-big">5000</b>
                 <b class="cards__price">5000</b>
@@ -138,64 +127,6 @@
               <div class="cards__price-wrap">
                 <b class="cards__price-big">2700</b>
                 <b class="cards__price">2700</b>
-              </div>
-              <a class="btn cards__link" href="#">Купить абонемент</a>
-            </li>
-          </ul>
-          <ul class="list-reset abonnements__cards-list cards" id="#content2">
-            <li class="cards__item">
-              <h3>С тренером</h3>
-              <span>72 занятий</span>
-              <div class="cards__price-wrap">
-                <b class="cards__price-big">27000</b>
-                <b class="cards__price">27000</b>
-              </div>
-              <a class="btn cards__link" href="#">Купить абонемент</a>
-            </li>
-            <li class="cards__item">
-              <h3>Дневной</h3>
-              <span>с 8:00 до 17:00</span>
-              <div class="cards__price-wrap">
-                <b class="cards__price-big">9200</b>
-                <b class="cards__price">9200</b>
-              </div>
-              <a class="btn cards__link" href="#">Купить абонемент</a>
-            </li>
-            <li class="cards__item">
-              <h3>Полный день</h3>
-              <span>с 8:00 до 22:00 </span>
-              <div class="cards__price-wrap">
-                <b class="cards__price-big">14500</b>
-                <b class="cards__price">14500</b>
-              </div>
-              <a class="btn cards__link" href="#">Купить абонемент</a>
-            </li>
-          </ul>
-          <ul class="list-reset abonnements__cards-list cards" id="#content3">
-            <li class="cards__item">
-              <h3>С тренером</h3>
-              <span>144 занятия</span>
-              <div class="cards__price-wrap">
-                <b class="cards__price-big">51000</b>
-                <b class="cards__price">51000</b>
-              </div>
-              <a class="btn cards__link" href="#">Купить абонемент</a>
-            </li>
-            <li class="cards__item">
-              <h3>Дневной</h3>
-              <span>с 8:00 до 17:00</span>
-              <div class="cards__price-wrap">
-                <b class="cards__price-big">17300</b>
-                <b class="cards__price">17300</b>
-              </div>
-              <a class="btn cards__link" href="#">Купить абонемент</a>
-            </li>
-            <li class="cards__item">
-              <h3>Полный день</h3>
-              <span>с 8:00 до 22:00 </span>
-              <div class="cards__price-wrap">
-                <b class="cards__price-big">27500</b>
-                <b class="cards__price">27500</b>
               </div>
               <a class="btn cards__link" href="#">Купить абонемент</a>
             </li>
