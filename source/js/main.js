@@ -6,19 +6,20 @@
 
   var anchorLinks = document.querySelectorAll('a[href^="#"]:not([href$="#"])');
 
-
   if (window.smoothscroll) {
     window.__forceSmoothScrollPolyfill__ = true;
     window.smoothscroll.polyfill();
   }
 
   var initScrollThrough = function (link) {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
-      var currentSection = document.querySelector(event.target.hash);
+    link.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      var currentSection = document.querySelector(evt.target.hash);
 
       if (currentSection) {
-        currentSection.scrollIntoView({behavior: 'smooth'});
+        currentSection.scrollIntoView({
+          behavior: 'smooth'
+        });
       }
     });
   };
@@ -30,7 +31,6 @@
   };
 
   initAnchors(anchorLinks);
-
 
   // Tabs
 
@@ -56,8 +56,8 @@
   var numberSessions = document.querySelector('.cards__number');
   var costSessions = document.querySelectorAll('.cards__price');
   var costSessionsBig = document.querySelectorAll('.cards__price-big');
-  var activateTabClassName = 'tabs__item--active';
-
+  var tabActive = document.querySelector('.tabs__item--active');
+  var activeTabClassName = 'tabs__item--active';
 
   var fillNumberSessions = function (value) {
     numberSessions.textContent = value;
@@ -69,49 +69,44 @@
     }
   };
 
-  var onTabClick = function () {
-    for (var i = 0; i < tabs.length; i++) {
-      var tab = tabs[i];
-      var tabContent = tab.textContent;
+  var onTabClick = function (evt) {
+    if (evt.target !== activeTabClassName) {
+      tabActive.classList.remove(activeTabClassName);
+      evt.target.classList.add(activeTabClassName);
+      tabActive = evt.target;
 
-      tab.classList.remove(activateTabClassName);
+      if (evt.target.textContent === PeriodSessions.ONE_MONTH) {
+        fillNumberSessions(NumberSessions.ONE_MONTH);
+        fillPriceSessions(costSessions, PriceSessions.ONE_MONTH);
+        fillPriceSessions(costSessionsBig, PriceSessions.ONE_MONTH);
+      }
 
-      if (tab === this) {
-        tab.classList.add(activateTabClassName);
+      if (evt.target.textContent === PeriodSessions.SIX_MONTH) {
+        fillNumberSessions(NumberSessions.SIX_MONTH);
+        fillPriceSessions(costSessions, PriceSessions.SIX_MONTH);
+        fillPriceSessions(costSessionsBig, PriceSessions.SIX_MONTH);
+      }
 
-        if (tabContent === PeriodSessions.ONE_MONTH) {
-          fillNumberSessions(NumberSessions.ONE_MONTH);
-          fillPriceSessions(costSessions, PriceSessions.ONE_MONTH);
-          fillPriceSessions(costSessionsBig, PriceSessions.ONE_MONTH);
-        }
-
-        if (tabContent === PeriodSessions.SIX_MONTH) {
-          fillNumberSessions(NumberSessions.SIX_MONTH);
-          fillPriceSessions(costSessions, PriceSessions.SIX_MONTH);
-          fillPriceSessions(costSessionsBig, PriceSessions.SIX_MONTH);
-        }
-
-        if (tabContent === PeriodSessions.TWELVE_MONTH) {
-          fillNumberSessions(NumberSessions.TWELVE_MONTH);
-          fillPriceSessions(costSessions, PriceSessions.TWELVE_MONTH);
-          fillPriceSessions(costSessionsBig, PriceSessions.TWELVE_MONTH);
-        }
+      if (evt.target.textContent === PeriodSessions.TWELVE_MONTH) {
+        fillNumberSessions(NumberSessions.TWELVE_MONTH);
+        fillPriceSessions(costSessions, PriceSessions.TWELVE_MONTH);
+        fillPriceSessions(costSessionsBig, PriceSessions.TWELVE_MONTH);
       }
     }
   };
 
   for (var i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener('click', onTabClick);
-  };
+  }
 
-  //Slider coach
+  // Slider coach
 
   var coach = document.querySelector('.coach');
   var coachSlider = coach.querySelector('.swiper-container');
   var buttonPrevious = coach.querySelector('.toggles__btn--prev');
   var buttonNext = coach.querySelector('.toggles__btn--next');
 
-  var coachSwiper = new Swiper(coachSlider, {
+  window.coachSwipper = new window.Swiper(coachSlider, {
     slidesPerView: 4,
     spaceBetween: 40,
     loop: true,

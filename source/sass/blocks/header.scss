@@ -1,6 +1,4 @@
-.intro {
-  min-height: 658px;
-
+.header {
   background-color: #ad042d;
   background-image: url("../img/intro-bg-lg@1x.jpg");
   background-repeat: no-repeat;
@@ -20,8 +18,6 @@
   }
 
   @media (max-width: $screen-md) {
-    min-height: 554px;
-
     background-image: url("../img/intro-bg-md@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -38,8 +34,6 @@
   }
 
   @media (max-width: $screen-sm) {
-    min-height: 490px;
-
     background-image: url("../img/intro-bg-sm@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -56,11 +50,11 @@
   }
 }
 
-.intro__inner {
+.header__inner {
   position: relative;
 
   padding-top: 30px;
-  padding-bottom: 76px;
+  padding-bottom: 77px;
 
   background-image: url("../img/intro-sportsman-lg@1x.jpg");
   background-repeat: no-repeat;
@@ -110,7 +104,7 @@
   }
 }
 
-.intro__top-row {
+.header__top-row {
   display: flex;
   flex-wrap: wrap;
 
@@ -121,7 +115,7 @@
   }
 }
 
-.intro__logo {
+.header__logo {
   @media (max-width: $screen-md) {
     margin-top: 3px;
   }
@@ -131,7 +125,7 @@
   }
 }
 
-.intro__logo img {
+.header__logo img {
   width: 89px;
   height: 20px;
 
@@ -146,7 +140,7 @@
   }
 }
 
-.intro__phone {
+.header__phone {
   margin-left: auto;
 
   font-family: $font-family-secondary;
@@ -179,11 +173,11 @@
   }
 }
 
-.intro__wrap {
+.header__wrap {
   display: flex;
 }
 
-.intro__text-block {
+.header__text-block {
   width: 397px;
 
   font-family: $font-family-secondary;
@@ -204,7 +198,7 @@
   }
 }
 
-.intro__text-block span {
+.header__text-block span {
   display: block;
 
   margin-bottom: 13px;
@@ -230,7 +224,7 @@
   }
 }
 
-.intro__text-block h1 {
+.header__text-block h1 {
   margin: 0;
   padding: 0;
 
@@ -252,7 +246,7 @@
   }
 }
 
-.intro__features-list {
+.header__features-list {
   margin: -90px 265px 83px 0;
 
   @media (max-width: $screen-md) {
@@ -264,13 +258,13 @@
   }
 }
 
-.intro__features-item {
+.header__features-item {
   font-family: $font-family;
   font-size: 14px;
   line-height: $line-height;
 }
 
-.intro__link {
+.header__link {
   display: inline-block;
 
   padding: 19px 12px;
@@ -309,7 +303,7 @@
   }
 }
 
-.intro__social {
+.header__social {
   margin-top: 315px;
   margin-left: auto;
 
@@ -318,11 +312,11 @@
   }
 }
 
-.intro__social-item {
+.header__social-item {
   margin-bottom: 15px;
 }
 
-.intro__social-item a {
+.header__social-item a {
   font-size: 12px;
   line-height: 14px;
 

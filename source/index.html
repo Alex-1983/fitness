@@ -23,57 +23,51 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <section class="intro">
-        <div class="container intro__inner">
-          <div class="intro__top-row">
-            <a class="intro__logo">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/logo-sm.svg">
-                <source media="(max-width: 1199px)" srcset="img/logo-md.svg">
-                <img src="img/logo-lg.svg" width="89" height="20" alt="логотип">
-              </picture>
-            </a>
-            <a class="intro__phone" href="tel:88005555555">8-800-555-55-55</a>
-          </div>
-          <div class="intro__wrap">
-            <div class="intro__text-block">
-              <span>Омск</span>
-              <h1>Фитнес центр</h1>
-              <ul class="list-reset intro__features-list">
-                <li class="intro__features-item">Тренажерный зал</li>
-                <li class="intro__features-item">Групповые занятия</li>
-                <li class="intro__features-item">Кардио-зона</li>
-              </ul>
-              <a class="btn intro__link" href="#abonnements">Купить абонемент</a>
-            </div>
-            <ul class="list-reset intro__social">
-              <li class="intro__social-item">
-                <a href="https://www.facebook.com" target="_blank" title="Фейсбук">Fb</a>
-              </li>
-              <li class="intro__social-item">
-                <a href="https://vk.com" target="_blank" title="Вконтакте">Vk</a>
-              </li>
-              <li class="intro__social-item">
-                <a href="https://www.instagram.com" target="_blank" title="Инстаграм">Ig</a>
-              </li>
-            </ul>
-          </div>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__top-row">
+          <a class="header__logo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/logo-sm.svg">
+              <source media="(max-width: 1199px)" srcset="img/logo-md.svg">
+              <img src="img/logo-lg.svg" width="89" height="20" alt="логотип">
+            </picture>
+          </a>
+          <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
         </div>
-      </section>
+        <div class="header__wrap">
+          <div class="header__text-block">
+            <span>Омск</span>
+            <h1>Фитнес центр</h1>
+            <ul class="list-reset header__features-list">
+              <li class="header__features-item">Тренажерный зал</li>
+              <li class="header__features-item">Групповые занятия</li>
+              <li class="header__features-item">Кардио-зона</li>
+            </ul>
+            <a class="btn header__link" href="#abonnements">Купить абонемент</a>
+          </div>
+          <ul class="list-reset header__social">
+            <li class="header__social-item">
+              <a href="https://www.facebook.com" target="_blank" title="Фейсбук">Fb</a>
+            </li>
+            <li class="header__social-item">
+              <a href="https://vk.com" target="_blank" title="Вконтакте">Vk</a>
+            </li>
+            <li class="header__social-item">
+              <a href="https://www.instagram.com" target="_blank" title="Инстаграм">Ig</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main class="main-content">
       <section class="gym">
         <div class="container gym__inner">
           <div class="gym__text-block">
             <h2>Тренажерный зал</h2>
-            <div class="gym__text-head">
-              <p>Просторный зал площадью 900 кв/м</p>
-            </div>
+            <p>Просторный зал площадью 900 кв/м</p>
             <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <div class="gym__text-low">
-              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-            </div>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
           <div class="gym__img-wrap">
             <picture>
@@ -152,7 +146,6 @@
             <p>Ежегодные соревнования по CrossFit</p>
             <a class="btn games__link" href="#">Заполнить заявку</a>
           </div>
-          <div class="games__img"></div>
         </div>
       </section>
       <section class="coach">
@@ -336,43 +329,22 @@
         <div class="container features__inner">
           <h2>Наши преимущества</h2>
           <ul class="list-reset features__list">
-            <li class="features__item">
-              <ul class="list-reset features__row features__row--top">
-                <li class="features__description features__description--line">
-                  <div class="features__number features__number--area">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-area-small@1x.webp, img/number-area-small@2x.webp 2x">
-                      <source type="image/webp" srcset="img/number-area-big@1x.webp, img/number-area-big@2x.webp 2x">
-                      <!-- 1х: 89px; 2x: 78px -->
-                      <source media="(max-width: 1199px)" srcset="img/number-area-small@1x.png, img/number-area-small@2x.png 2x">
-                      <!-- 1х: 108px; 2x: 216px -->
-                      <img src="img/number-area-big@1x.png" srcset="img/number-area-big@2x.png 2x" width="108" height="49" alt="Площадь спортивного зала">
-                    </picture>
-                    <span>Кв/м</span>
-                  </div>
-                  <div class="features__text features__text--area">
-                    <h3>Площадь</h3>
-                    <p>Занимайтесь без очередей и толпучки</p>
-                  </div>
-                </li>
-                <li class="features__description features__description--line">
-                  <div class="features__number features__number--car">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-car-small@1x.webp, img/number-car-small@2x.webp 2x">
-                      <source type="image/webp" srcset="img/number-car-big@1x.webp, img/number-car-big@2x.webp 2x">
-                      <!-- 1х: 59px; 2x: 118px -->
-                      <source media="(max-width: 1199px)" srcset="img/number-car-small@1x.png, img/number-car-small@2x.png 2x">
-                      <!-- 1х: 72px; 2x: 144px -->
-                      <img src="img/number-car-big@1x.png" srcset="img/number-car-big@2x.png 2x" width="72" height="49" alt="Количество мест для парковки">
-                    </picture>
-                    <span>Машин</span>
-                  </div>
-                  <div class="features__text features__text--car">
-                    <h3>Собственная парковка</h3>
-                    <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-                  </div>
-                </li>
-              </ul>
+            <li class="features__item features__item--area">
+              <div class="features__number features__number--area">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-area-small@1x.webp, img/number-area-small@2x.webp 2x">
+                  <source type="image/webp" srcset="img/number-area-big@1x.webp, img/number-area-big@2x.webp 2x">
+                  <!-- 1х: 89px; 2x: 78px -->
+                  <source media="(max-width: 1199px)" srcset="img/number-area-small@1x.png, img/number-area-small@2x.png 2x">
+                  <!-- 1х: 108px; 2x: 216px -->
+                  <img src="img/number-area-big@1x.png" srcset="img/number-area-big@2x.png 2x" width="108" height="49" alt="Площадь спортивного зала">
+                </picture>
+                <span>Кв/м</span>
+              </div>
+              <div class="features__text features__text--area">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и толпучки</p>
+              </div>
             </li>
             <li class="features__item features__item--trainers">
               <h3>
@@ -381,43 +353,56 @@
               </h3>
               <p>Современные тренажеры на все группы мышц</p>
             </li>
-            <li class="features__item">
-              <ul class="list-reset features__row">
-                <li class="features__description">
-                  <div class="features__number features__number--place">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-place-small@1x.webp, img/number-place-small@2x.webp 2x">
-                      <source type="image/webp" srcset="img/number-place-big@1x.webp, img/number-place-big@2x.webp 2x">
-                      <!-- 1х: 89px; 2x: 178px -->
-                      <source media="(max-width: 1199px)" srcset="img/number-place-small@1x.png, img/number-place-small@2x.png 2x">
-                      <!-- 1х: 108px; 2x: 216px -->
-                      <img src="img/number-place-big@1x.png" srcset="img/number-place-big@2x.png 2x" width="108" height="49" alt="Количество мест для занятий">
-                    </picture>
-                    <span>Мест</span>
-                  </div>
-                  <div class="features__text features__text--place">
-                    <h3>Комфорт</h3>
-                    <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-                  </div>
-                </li>
-                <li class="features__description">
-                  <div class="features__number features__number--years">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-years-small@1x.webp, img/number-years-small@2x.webp 2x">
-                      <source type="image/webp" srcset="img/number-years-big@1x.webp, img/number-years-big@2x.webp 2x">
-                      <!-- 1х: 57px; 2x: 114px -->
-                      <source media="(max-width: 1199px)" srcset="img/number-years-small@1x.png, img/number-years-small@2x.png 2x">
-                      <!-- 1х: 70px; 2x: 140px -->
-                      <img src="img/number-years-big@1x.png" srcset="img/number-years-big@2x.png 2x" width="70" height="49" alt="Тренерский опыт">
-                    </picture>
-                    <span>Лет</span>
-                  </div>
-                  <div class="features__text features__text--years">
-                    <h3>Тренерский опыт</h3>
-                    <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-                  </div>
-                </li>
-              </ul>
+            <li class="features__item features__item--car">
+              <div class="features__number features__number--car">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-car-small@1x.webp, img/number-car-small@2x.webp 2x">
+                  <source type="image/webp" srcset="img/number-car-big@1x.webp, img/number-car-big@2x.webp 2x">
+                  <!-- 1х: 59px; 2x: 118px -->
+                  <source media="(max-width: 1199px)" srcset="img/number-car-small@1x.png, img/number-car-small@2x.png 2x">
+                  <!-- 1х: 72px; 2x: 144px -->
+                  <img src="img/number-car-big@1x.png" srcset="img/number-car-big@2x.png 2x" width="72" height="49" alt="Количество мест для парковки">
+                </picture>
+                <span>Машин</span>
+              </div>
+              <div class="features__text features__text--car">
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </li>
+            <li class="features__item features__item--place">
+              <div class="features__number features__number--place">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-place-small@1x.webp, img/number-place-small@2x.webp 2x">
+                  <source type="image/webp" srcset="img/number-place-big@1x.webp, img/number-place-big@2x.webp 2x">
+                  <!-- 1х: 89px; 2x: 178px -->
+                  <source media="(max-width: 1199px)" srcset="img/number-place-small@1x.png, img/number-place-small@2x.png 2x">
+                  <!-- 1х: 108px; 2x: 216px -->
+                  <img src="img/number-place-big@1x.png" srcset="img/number-place-big@2x.png 2x" width="108" height="49" alt="Количество мест для занятий">
+                </picture>
+                <span>Мест</span>
+              </div>
+              <div class="features__text features__text--place">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li class="features__item features__item--years ">
+              <div class="features__number features__number--years">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1190px)" srcset="img/number-years-small@1x.webp, img/number-years-small@2x.webp 2x">
+                  <source type="image/webp" srcset="img/number-years-big@1x.webp, img/number-years-big@2x.webp 2x">
+                  <!-- 1х: 57px; 2x: 114px -->
+                  <source media="(max-width: 1199px)" srcset="img/number-years-small@1x.png, img/number-years-small@2x.png 2x">
+                  <!-- 1х: 70px; 2x: 140px -->
+                  <img src="img/number-years-big@1x.png" srcset="img/number-years-big@2x.png 2x" width="70" height="49" alt="Тренерский опыт">
+                </picture>
+                <span>Лет</span>
+              </div>
+              <div class="features__text features__text--years">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -433,21 +418,16 @@
                 <p>Безлимитный абонемент в тренажерный зал</p>
                 <a class="btn promo__link" href="#">Подробнее</a>
               </div>
-              <div class="promo__img"></div>
             </div>
             <ul class="list-reset promo__list">
-              <li class="promo__item promo__item--abonnement">
-                <h3>Месяц бесплатно</h3>
-                <div class="promo__item-text">
-                  <p>Приведи друга, получи абонемент в подарок</p>
-                  <a class="btn promo__link promo__link--blue" href="#">Подробнее</a>
-                </div>
-              </li>
               <li class="promo__item">
-                <div class="promo__item-text">
-                  <h3>Скидка 20%</h3>
-                  <p>Корпоративный фитнес с командой</p>
-                </div>
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                <a class="btn promo__link promo__link--blue" href="#">Подробнее</a>
+              </li>
+              <li class="promo__item promo__item--discount">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
                 <a class="btn promo__link promo__link--blue" href="#">Подробнее</a>
               </li>
             </ul>
