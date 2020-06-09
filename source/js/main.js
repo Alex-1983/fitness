@@ -130,4 +130,23 @@
 
   });
 
+  // Slider reviews
+
+  var reviews = document.querySelector('.reviews');
+  var reviewsSlider = reviews.querySelector('.swiper-container');
+  var buttonPrevious = reviews.querySelector('.toggles__btn--prev');
+  var buttonNext = reviews.querySelector('.toggles__btn--next');
+
+  window.reviewsSwipper = new window.Swiper(reviewsSlider, {
+    slidesPerView: 1,
+    loop: true,
+
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrevious
+    },
+
+  });
+
+
 })();
