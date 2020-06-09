@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  @media (max-width: $screen-md) {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,174 @@
+.contacts {
+  position: relative;
+
+  flex-grow: 2;
+
+  margin-right: auto;
+  padding: 67px 85px 40px 120px;
+  width: 575px;
+
+  border-top: 1px solid #74819c;
+
+  @media (max-width: $screen-md) {
+    margin-left: auto;
+    padding-bottom: 45px;
+    padding-left: 35px;
+
+    border: 0;
+  }
+
+  @media (max-width: $screen-sm) {
+    display: block;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    width: auto;
+  }
+}
+
+.contacts h2 {
+  margin-bottom: 45px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 38px;
+  }
+}
+
+.contacts__list {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 3px;
+  width: 475px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 232px;
+
+    width: 1px;
+    height: 78%;
+
+    background-color: #74819c;
+  }
+
+  @media (max-width: $screen-md) {
+    padding-left: 0;
+    width: 550px;
+
+    &::before {
+      top: 9px;
+      left: 267px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    flex-direction: column;
+
+    width: auto;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+  width: 180px;
+
+  color: $blue-dark;
+
+  @media (max-width: $screen-md) {
+    width: 235px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: auto;
+  }
+
+  &--chart {
+    @media (max-width: $screen-sm) {
+      order: 1;
+    }
+  }
+
+  &--phone {
+    padding-right: 20px;
+
+    @media (max-width: $screen-md) {
+      padding-right: 25px;
+    }
+
+    @media (max-width: $screen-sm) {
+      order: 2;
+    }
+  }
+
+  &--email {
+    @media (max-width: $screen-sm) {
+      order: 3;
+    }
+  }
+
+  &:nth-of-type(2n) {
+    margin-left: auto;
+
+    @media (max-width: $screen-sm) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contacts__item h3 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+  }
+}
+
+.contacts__item p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $screen-md) {
+    font-size: 18px;
+  }
+}
+
+.contacts__item a {
+  font-size: 14px;
+  line-height: 21px;
+
+  text-decoration: none;
+
+  color: $blue-dark;
+
+  @media (max-width: $screen-md) {
+    font-size: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    outline: 0;
+  }
+}

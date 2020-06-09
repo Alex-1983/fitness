@@ -128,6 +128,7 @@
         </div>
       </section>
       <section class="games">
+        <h2 class="visually-hidden">Ежегодные соревнования по CrossFit</h2>
         <div class="container games__inner">
           <div class="games__text-block">
             <div class="games__wrap">
@@ -139,7 +140,7 @@
                 </div>
                 <div class="games__time">
                   <span>Время</span>
-                  <time datetime="2019-3-7T12:00">12:00</time>
+                  <time datetime="2019-03-7T12:00">12:00</time>
                 </div>
               </div>
             </div>
@@ -518,6 +519,47 @@
           </div>
         </div>
       </section>
+      <div class="row">
+        <section class="lesson">
+          <div class="lesson__inner">
+            <h2>Бесплатное занятие</h2>
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="form__item">
+                <label>
+                  <input type="text" name="name" placeholder="Имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required="">
+                </label>
+              </div>
+              <div class="form__item">
+                <label>
+                  <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="on" required="">
+                </label>
+              </div>
+              <button class="btn form__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <ul class="list-reset contacts__list">
+            <li class="contacts__item">
+              <h3>Адрес:</h3>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <h3>Телефон:</h3>
+              <a href="tel:88005555555">8-800-555-55-55</a>
+            </li>
+            <li class="contacts__item contacts__item--chart">
+              <h3>График работы:</h3>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>

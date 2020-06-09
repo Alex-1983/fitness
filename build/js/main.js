@@ -103,8 +103,8 @@
 
   var coach = document.querySelector('.coach');
   var coachSlider = coach.querySelector('.swiper-container');
-  var buttonPrevious = coach.querySelector('.toggles__btn--prev');
-  var buttonNext = coach.querySelector('.toggles__btn--next');
+  var coachBtnPrevious = coach.querySelector('.toggles__btn--prev');
+  var coachBtnNext = coach.querySelector('.toggles__btn--next');
 
   window.coachSwipper = new window.Swiper(coachSlider, {
     slidesPerView: 4,
@@ -124,8 +124,8 @@
     },
 
     navigation: {
-      nextEl: buttonNext,
-      prevEl: buttonPrevious
+      nextEl: coachBtnPrevious,
+      prevEl: coachBtnNext
     },
 
   });
@@ -134,19 +134,32 @@
 
   var reviews = document.querySelector('.reviews');
   var reviewsSlider = reviews.querySelector('.swiper-container');
-  var buttonPrevious = reviews.querySelector('.toggles__btn--prev');
-  var buttonNext = reviews.querySelector('.toggles__btn--next');
+  var reviewsBtnPrevious = reviews.querySelector('.toggles__btn--prev');
+  var reviewsBtnNext = reviews.querySelector('.toggles__btn--next');
 
   window.reviewsSwipper = new window.Swiper(reviewsSlider, {
     slidesPerView: 1,
     loop: true,
 
     navigation: {
-      nextEl: buttonNext,
-      prevEl: buttonPrevious
+      nextEl: reviewsBtnPrevious,
+      prevEl: reviewsBtnNext
     },
 
   });
+
+  // Phone-mask
+
+  var createMask = window.IMask;
+  var inputPhone = document.getElementById("phone");
+
+  if (inputPhone) {
+    createMask(
+        inputPhone, {
+          mask: '+{7} (000) 000-00-00'
+        }
+    );
+  }
 
 
 })();
