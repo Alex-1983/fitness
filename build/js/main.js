@@ -151,7 +151,7 @@
   // Phone-mask
 
   var createMask = window.IMask;
-  var inputPhone = document.getElementById("phone");
+  var inputPhone = document.getElementById('phone');
 
   if (inputPhone) {
     createMask(

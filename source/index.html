@@ -23,6 +23,9 @@
   </head>
 
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
     <header class="header">
       <div class="container header__inner">
         <div class="header__top-row">
@@ -560,6 +563,59 @@
           </ul>
         </section>
       </div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__wrap">
+            <div class="footer__logo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/logo-sm.svg">
+                <source media="(max-width: 1199px)" srcset="img/logo-md.svg">
+                <img src="img/logo-lg.svg" width="89" height="20" alt="Логотип">
+              </picture>
+            </div>
+            <ul class="list-reset footer__list footer-nav">
+              <li class="footer-nav__item" id="">
+                <a class="footer-nav__link" href="#gym">Услуги</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#abonnements">Абонементы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#promo">Акции</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#coach">Тренеры</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Расписание</a>
+              </li>
+            </ul>
+            <ul class="list-reset footer__social social">
+              <li class="social__item">
+                <a class="social__link social__link--vk" target="_blank" title="Вконтакте" href="#" aria-label="Мы в фейсбуке">
+                  <svg width="24" height="13">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" target="_blank" title="Инстаграм" href="#" aria-label="Мы в Инстаграме">
+                  <svg width="24" height="24">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" target="_blank" title="Фейсбук" href="#" aria-label="Мы в твитере">
+                  <svg width="12" height="24">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
