@@ -198,20 +198,6 @@
   background-clip: padding-box;
   box-shadow: 0 0 0 1px #8c739c;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 28px;
-    left: 33px;
-
-    width: 0;
-    height: 0;
-
-    border-width: 7.5px 0 7.5px 13px;
-    border-style: solid;
-    border-color: transparent transparent transparent $white;
-  }
-
   @media (max-width: $screen-md) {
     top: 49%;
 
@@ -219,23 +205,36 @@
     height: 73px;
 
     border-width: 10px;
-
-    &::before {
-      top: 21px;
-      left: 22px;
-
-      width: 0;
-      height: 0;
-
-      border-width: 5px 0 5px 9px;
-      border-style: solid;
-      border-color: transparent transparent transparent $white;
-    }
   }
 
   &:hover,
   &:focus {
     outline: none;
     box-shadow: 0 0 5px 3px #b80027;
+  }
+}
+
+.gym__btn svg {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translate(-50%, -50%);
+
+  fill: $white;
+
+  @media (max-width: $screen-md) {
+    left: 50%;
+
+    width: 12px;
+    height: 12px;
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 52%;
+    left: 54%;
   }
 }

@@ -1,6 +1,6 @@
 .features {
   padding-top: 118px;
-  padding-bottom: 65px;
+  padding-bottom: 37px;
 
   background-color: $gray;
 
@@ -61,29 +61,13 @@
   }
 }
 
-.features__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media (max-width: $screen-sm) {
-    display: block;
-
-    padding-right: 45px;
-    padding-left: 45px;
-  }
-}
-
 .features__item {
-  position: relative;
-
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-start;
 
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  width: 341px;
+  padding-top: 78px;
+  padding-bottom: 75px;
+  width: 348px;
 
   line-height: $line-height;
 
@@ -91,6 +75,7 @@
 
   @media (max-width: $screen-md) {
     margin-bottom: 39px;
+    padding-top: 0;
     padding-bottom: 0;
     width: 322px;
   }
@@ -99,27 +84,39 @@
     display: block;
 
     margin: 0 auto 42px;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
     width: auto;
   }
 
   &--area {
+    padding-top: 0;
+  }
+
+  &--car {
+    padding-top: 0;
+
     @media (max-width: $screen-md) {
       order: 1;
     }
   }
 
-  &--car {
+  &--place {
     @media (max-width: $screen-md) {
-      order: 2;
+      order: 3;
+    }
+  }
+
+  &--years {
+    @media (max-width: $screen-md) {
+      order: 4;
     }
   }
 
   &--trainers {
-    position: relative;
+    position: absolute;
     top: 3px;
-    left: 121px;
+    left: 50%;
 
     padding: 56px 34px 60px;
     width: 240px;
@@ -134,53 +131,36 @@
 
     @media (max-width: $screen-md) {
       position: relative;
-
       left: 50%;
 
-      order: 3;
+      order: 2;
 
       margin-bottom: 47px;
       padding: 32px 127px 39px;
-
       width: 65%;
       max-width: 600px;
 
-      text-align: center;
       transform: translateX(-50%);
+      text-align: center;
     }
 
     @media (max-width: $screen-sm) {
+      left: 0;
+
       margin: 0 auto 50px;
       padding: 36px 65px 41px;
       width: auto;
-      left: 0;
+
       transform: none;
     }
   }
 
-  &--place {
-    @media (max-width: $screen-md) {
-      order: 4;
-    }
-  }
-
-  &--years {
-    @media (max-width: $screen-md) {
-      order: 5;
-    }
-  }
-
-  &:nth-child(4),
-  &:nth-child(5) {
-    margin-top: -172px;
-    padding-top: 78px;
-    border-top: 2px solid rgba(209, 10, 66, 0.2);
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
     @media (max-width: $screen-md) {
-      margin-top: 0;
-      padding-top: 0;
-
-      border: 0;
+      border: none;
     }
   }
 }
@@ -196,10 +176,10 @@
     margin: 0 auto 13px;
 
     font-size: 22px;
+  }
 
-    @media (max-width: $screen-sm) {
-      line-height: 1.2;
-    }
+  @media (max-width: $screen-sm) {
+    line-height: 1.2;
   }
 }
 
@@ -241,7 +221,6 @@
 }
 
 .features__number--area img {
-  padding-left: 3px;
   width: 105px;
   height: 53px;
 
@@ -252,10 +231,11 @@
 }
 
 .features__number--car {
-  padding-left: 0;
-  width: 72px;
+  padding-left: 10px;
+  width: 78px;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-md) {
+    padding-left: 0;
     width: auto;
   }
 }
@@ -282,7 +262,7 @@
 
 .features__number--place img {
   width: 103px;
-  height: 53px;
+  height: 54px;
 
   @media (max-width: $screen-md) {
     width: 88px;
@@ -291,7 +271,7 @@
 }
 
 .features__number--years {
-  padding-left: 4px;
+  padding-left: 10px;
 
   @media (max-width: $screen-md) {
     padding-left: 0;
@@ -300,7 +280,7 @@
 
 .features__number--years img {
   width: 65px;
-  height: 53px;
+  height: 54px;
 
   @media (max-width: $screen-md) {
     width: 53px;
@@ -359,7 +339,7 @@
   }
 
   &--place {
-    width: 183px;
+    width: 190px;
 
     @media (max-width: $screen-md) {
       width: 202px;
@@ -373,8 +353,11 @@
   }
 
   &--years {
-    padding-right: 3px;
     width: 237px;
+
+    @media (max-width: $screen-md) {
+      padding-right: 0;
+    }
 
     @media (max-width: $screen-sm) {
       padding-right: 30px;

@@ -73,4 +73,9 @@
       transform: rotate(45deg) translateX(-50%);
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
 }

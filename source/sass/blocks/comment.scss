@@ -4,7 +4,7 @@
   background-color: $blue;
 
   @media (max-width: $screen-md) {
-    padding-right: 63px;
+    padding-right: 65px;
   }
 
   @media (max-width: $screen-sm) {
@@ -68,7 +68,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 .comment__description p {
   margin: 0;

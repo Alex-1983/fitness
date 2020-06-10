@@ -64,7 +64,7 @@
       </div>
     </header>
     <main class="main-content">
-      <section class="gym">
+      <section class="gym" id="gym">
         <div class="container gym__inner">
           <div class="gym__text-block">
             <h2>Тренажерный зал</h2>
@@ -87,7 +87,11 @@
           </div>
           <div class="gym__video-wrap">
             <video></video>
-            <button class="btn gym__btn" type="button" aria-label="Смотреть"></button>
+            <button class="btn gym__btn" type="button" aria-label="Смотреть">
+              <svg width="17" height="17">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -106,6 +110,9 @@
               <div class="cards__price-wrap">
                 <b class="cards__price-big">5000</b>
                 <b class="cards__price">5000</b>
+                <svg width="30" height="42">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use>
+                </svg>
               </div>
               <a class="btn cards__link" href="#">Купить абонемент</a>
             </li>
@@ -115,6 +122,9 @@
               <div class="cards__price-wrap">
                 <b class="cards__price-big">1700</b>
                 <b class="cards__price">1700</b>
+                <svg width="30" height="42">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use>
+                </svg>
               </div>
               <a class="btn cards__link" href="#">Купить абонемент</a>
             </li>
@@ -124,6 +134,9 @@
               <div class="cards__price-wrap">
                 <b class="cards__price-big">2700</b>
                 <b class="cards__price">2700</b>
+                <svg width="30" height="42">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use>
+                </svg>
               </div>
               <a class="btn cards__link" href="#">Купить абонемент</a>
             </li>
@@ -152,10 +165,10 @@
           </div>
         </div>
       </section>
-      <section class="coach">
-        <div class="container coach__inner">
-          <h2>Тренеры</h2>
+      <section class="coach" id="coach">
+        <div class="coach__inner">
           <div class="coach__slider">
+            <h2>Тренеры</h2>
             <div class="swiper-container">
               <ul class="list-reset swiper-wrapper">
                 <li class="coach__item swiper-slide">
@@ -350,13 +363,6 @@
                 <p>Занимайтесь без очередей и толпучки</p>
               </div>
             </li>
-            <li class="features__item features__item--trainers">
-              <h3>
-                <span>100</span>
-                Тренажеров
-              </h3>
-              <p>Современные тренажеры на все группы мышц</p>
-            </li>
             <li class="features__item features__item--car">
               <div class="features__number features__number--car">
                 <picture>
@@ -391,6 +397,13 @@
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
+            <li class="features__item features__item--trainers">
+              <h3>
+                <span>100</span>
+                Тренажеров
+              </h3>
+              <p>Современные тренажеры на все группы мышц</p>
+            </li>
             <li class="features__item features__item--years ">
               <div class="features__number features__number--years">
                 <picture>
@@ -411,7 +424,7 @@
           </ul>
         </div>
       </section>
-      <section class="promo">
+      <section class="promo" id="promo">
         <div class="container promo__inner">
           <h2>Акции</h2>
           <div class="promo__container">

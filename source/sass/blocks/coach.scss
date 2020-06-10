@@ -16,11 +16,13 @@
 .coach__inner {
   position: relative;
 
-  padding-right: 57px;
-  padding-left: 57px;
-  width: 1275px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1275px;
 
   @media (max-width: $screen-md) {
+    padding-left: 57px;
+    padding-right: 57px;
     width: 680px;
   }
 
@@ -28,6 +30,17 @@
     padding-right: 35px;
     padding-left: 37px;
     width: 300px;
+  }
+}
+
+.coach__slider {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1160px;
+
+  @media (max-width: $screen-md) {
+    margin: 0;
+    width: auto;
   }
 }
 

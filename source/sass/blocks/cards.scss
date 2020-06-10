@@ -94,7 +94,7 @@
 
   display: inline-block;
 
-  padding-right: 45px;
+  padding-right: 10px;
 
   font-size: 60px;
   font-weight: 700;
@@ -105,35 +105,27 @@
 
   color: #103aae;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    right: 0;
-
-    width: 30px;
-    height: 42px;
-
-    background-image: url("../img/ruble.svg");
-    background-repeat: no-repeat;
-  }
-
   @media (max-width: $screen-md) {
     margin-right: auto;
     margin-left: auto;
   }
 
   @media (max-width: $screen-sm) {
-    padding-right: 32px;
+    padding-right: 8px;
 
     font-size: 48px;
+  }
+}
 
-    &::after {
-      top: 20px;
-      right: -10px;
+.cards__price-wrap svg {
+  position: relative;
+  top: 25px;
+  fill: $blue-dark;
 
-      background-image: url("../img/ruble-sm.svg");
-    }
+  @media (max-width: $screen-sm) {
+    top: 21px;
+    width: 24px;
+    height: 33px;
   }
 }
 
