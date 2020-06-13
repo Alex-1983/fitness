@@ -6,46 +6,46 @@
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-bg-lg@2x.jpg");
+    background-image: url("../img/header-bg-lg@2x.jpg");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-bg-lg@1x.webp");
+    background-image: url("../img/header-bg-lg@1x.webp");
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-bg-lg@2x.webp");
+    background-image: url("../img/header-bg-lg@2x.webp");
   }
 
   @media (max-width: $screen-md) {
-    background-image: url("../img/intro-bg-md@1x.jpg");
+    background-image: url("../img/header-bg-md@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-bg-md@2x.jpg");
+      background-image: url("../img/header-bg-md@2x.jpg");
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-bg-md.webp");
+      background-image: url("../img/header-bg-md.webp");
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-bg-md@2x.webp");
+      background-image: url("../img/header-bg-md@2x.webp");
     }
   }
 
   @media (max-width: $screen-sm) {
-    background-image: url("../img/intro-bg-sm@1x.jpg");
+    background-image: url("../img/header-bg-sm@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-bg-sm@2x.jpg");
+      background-image: url("../img/header-bg-sm@2x.jpg");
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-bg-sm.webp");
+      background-image: url("../img/header-bg-sm.webp");
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-bg-sm@2x.webp");
+      background-image: url("../img/header-bg-sm@2x.webp");
     }
   }
 }
@@ -56,43 +56,27 @@
   padding-top: 30px;
   padding-bottom: 77px;
 
-  background-image: url("../img/intro-sportsman-lg@1x.jpg");
+  background-image: url("../img/header-sportsman-lg@1x.jpg");
   background-repeat: no-repeat;
   background-position: top 51px right 210px;
   background-size: 500px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-sportsman-lg@2x.jpg");
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-sportsman-lg@1x.webp");
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-sportsman-lg@2x.webp");
+    background-image: url("../img/header-sportsman-lg@2x.jpg");
   }
 
   @media (max-width: $screen-md) {
     padding-top: 38px;
-    padding-bottom: 105px;
+    padding-bottom: 106px;
     width: 100%;
     max-width: 900px;
 
-    background-image: url("../img/intro-sportsman-md@1x.jpg");
+    background-image: url("../img/header-sportsman-md@1x.jpg");
     background-position: top 82px right 45px;
     background-size: 324px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-sportsman-md@2x.jpg");
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-sportsman-md@1x.webp");
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/intro-sportsman-md@2x.webp");
+      background-image: url("../img/header-sportsman-md@2x.jpg");
     }
   }
 
@@ -237,6 +221,7 @@
   @media (max-width: $screen-md) {
     font-size: 86px;
     line-height: 86px;
+
     letter-spacing: 0.034em;
   }
 
@@ -283,9 +268,8 @@
 
   color: $white;
   border: 4px solid $white;
-  background-color: transparent;
-
   outline: none;
+  background-color: transparent;
 
   @media (max-width: $screen-md) {
     width: 187px;

@@ -5,7 +5,7 @@
   background-color: $gray;
 
   @media (max-width: $screen-md) {
-    padding-top: 100px;
+    padding-top: 99px;
     padding-bottom: 54px;
   }
 
@@ -131,11 +131,12 @@
 
     @media (max-width: $screen-md) {
       position: relative;
+      top: 4px;
       left: 50%;
 
       order: 2;
 
-      margin-bottom: 47px;
+      margin-bottom: 48px;
       padding: 32px 127px 39px;
       width: 65%;
       max-width: 600px;
@@ -147,7 +148,7 @@
     @media (max-width: $screen-sm) {
       left: 0;
 
-      margin: 0 auto 50px;
+      margin: 0 auto 52px;
       padding: 36px 65px 41px;
       width: auto;
 
@@ -300,7 +301,7 @@
 
 .features__text {
   margin-left: auto;
-  width: 176px;
+  width: 183px;
 
   @media (max-width: $screen-md) {
     padding-right: 17px;

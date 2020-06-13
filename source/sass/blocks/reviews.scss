@@ -24,7 +24,7 @@
 }
 
 .reviews h2 {
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 
   text-align: center;
 
@@ -40,7 +40,7 @@
   margin-left: auto;
   padding-right: 58px;
   padding-left: 58px;
-  width: 678px;
+  width: 676px;
 
   @media (max-width: $screen-md) {
     width: 100%;
@@ -48,10 +48,13 @@
 
     @media (max-width: $screen-sm) {
       padding: 0 47px;
-
-      width: 320px;
     }
   }
+}
+
+.reviews__item {
+  height: auto;
+  background-color: $blue;
 }
 
 .reviews .toggles__btn {

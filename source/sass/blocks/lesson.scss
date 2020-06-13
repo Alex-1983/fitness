@@ -8,18 +8,18 @@
   background-color: $blue-dark;
 
   @media (max-width: $screen-md) {
-    padding: 67px 161px 69px 132px;
+    padding: 69px 161px 69px 132px;
   }
 
   @media (max-width: $screen-sm) {
-    padding: 69px 15px 71px;
+    padding: 69px 15px 69px;
   }
 }
 
 .lesson__inner {
   margin-left: auto;
-  padding: 67px 171px 68px 0;
-  width: 583px;
+  padding: 67px 169px 69px 0;
+  width: 580px;
 
   @media (max-width: $screen-md) {
     margin-right: auto;

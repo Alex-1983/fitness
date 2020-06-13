@@ -24,12 +24,12 @@
   width: 360px;
   min-height: 448px;
 
-  border: 7px solid transparent;
+  border: 7px solid $white;
   background-color: $white;
 
   @media (max-width: $screen-md) {
     margin-right: 0;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
     padding-right: 108px;
     padding-bottom: 140px;
     padding-left: 108px;

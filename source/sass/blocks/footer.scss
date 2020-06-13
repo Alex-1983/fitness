@@ -6,14 +6,17 @@
 .footer__inner {
   margin-right: auto;
   margin-left: auto;
-  padding: 44px 10px 35px;
+  padding: 42px 10px 35px;
   width: 100%;
   max-width: 1366px;
 
+  @media (max-width: $screen-md) {
+    padding: 44px 10px 38px;
+    padding-bottom: 38px;
+  }
+
   @media (max-width: $screen-sm) {
-    padding-top: 45px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 45px 15px 43px;
   }
 }
 

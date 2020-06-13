@@ -9,7 +9,7 @@
 
   @media (max-width: $screen-sm) {
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 }
 
@@ -21,15 +21,14 @@
   max-width: 1275px;
 
   @media (max-width: $screen-md) {
-    padding-left: 57px;
-    padding-right: 57px;
-    width: 680px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
   }
 
   @media (max-width: $screen-sm) {
     padding-right: 35px;
-    padding-left: 37px;
-    width: 300px;
+    padding-left: 35px;
   }
 }
 
@@ -63,8 +62,17 @@
 
   height: 294px;
 
+  @media (max-width: $screen-md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 50.01%;
+    max-width: 50.01%;
+  }
+
   @media (max-width: $screen-sm) {
-    height: 274px;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -88,7 +96,7 @@
   left: 0;
 
   width: 100%;
-  height: 100%;
+  height: 294px;
 
   line-height: $line-height;
 
@@ -97,8 +105,19 @@
   color: $white;
   background-color: rgba(16, 38, 84, 0);
 
+  @media (max-width: $screen-md) {
+    left: 50%;
+    width: 268px;
+
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-50%);
+  }
+
   @media (max-width: $screen-sm) {
     top: 174px;
+    width: 226px;
+    height: 274px;
   }
 }
 
@@ -179,6 +198,26 @@
       top: 4px;
       left: 9px;
     }
+  }
+}
+
+.coach__inner .toggles__btn--prev {
+  @media (max-width: $screen-md) {
+    left: 43px;
+  }
+
+  @media (max-width: $screen-sm) {
+    left: 10px;
+  }
+}
+
+.coach__inner .toggles__btn--next {
+  @media (max-width: $screen-md) {
+    right: 43px;
+  }
+
+  @media (max-width: $screen-sm) {
+    right: 10px;
   }
 }
 

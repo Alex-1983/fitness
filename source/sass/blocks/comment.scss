@@ -1,14 +1,13 @@
 .comment {
-  padding: 53px 62px 58px;
-
-  background-color: $blue;
+  padding: 53px 62px 58px 60px;
 
   @media (max-width: $screen-md) {
+    padding-left: 63px;
     padding-right: 65px;
   }
 
   @media (max-width: $screen-sm) {
-    padding: 49px 26px 34px;
+    padding: 49px 26px 35px;
   }
 }
 
@@ -56,7 +55,7 @@
   line-height: $line-height;
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     padding-left: 98px;
 
     width: 62px;

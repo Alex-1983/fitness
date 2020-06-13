@@ -11,6 +11,7 @@
 
   @media (max-width: $screen-md) {
     margin-left: auto;
+    padding-top: 69px;
     padding-bottom: 45px;
     padding-left: 38px;
 
@@ -22,6 +23,7 @@
 
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 46px;
     width: auto;
   }
 }
@@ -30,11 +32,11 @@
   margin-bottom: 45px;
 
   @media (max-width: $screen-md) {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 }
 

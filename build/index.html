@@ -152,7 +152,8 @@
       <section class="games">
         <h2 class="visually-hidden">Ежегодные соревнования по CrossFit</h2>
         <div class="container games__inner">
-          <div class="games__text-block">
+          <div class="games__container">
+            <div class="games__text-block">
             <div class="games__wrap">
               <span>Super games</span>
               <div class="games__date-container">
@@ -162,12 +163,13 @@
                 </div>
                 <div class="games__time">
                   <span>Время</span>
-                  <time datetime="2019-03-7T12:00">12:00</time>
+                  <time datetime="12:00">12:00</time>
                 </div>
               </div>
             </div>
             <p>Ежегодные соревнования по CrossFit</p>
             <a class="btn games__link" href="#">Заполнить заявку</a>
+            </div>
           </div>
         </div>
       </section>
@@ -463,7 +465,7 @@
           <div class="reviews__slider">
             <div class="swiper-container">
               <ul class="list-reset swiper-wrapper">
-                <li class="slider__item swiper-slide">
+                <li class="reviews__item swiper-slide">
                   <article class="comment">
                     <h3 class="visually-hidden">Анна Орлова</h3>
                     <div class="comment__inner">
@@ -471,7 +473,9 @@
                         <picture>
                           <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-reviews-sm@1x.webp, img/photo-reviews-sm@2x.webp 2x">
                           <source type="image/webp" srcset="img/photo-reviews-lg@1x.webp, img/photo-reviews-lg@2x.webp 2x">
+                          <!-- 1х: 68px; 2x: 136px -->
                           <source media="(max-width: 767px)" srcset="img/photo-reviews-sm@1x.png, img/photo-reviews-sm@2x.png 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
                           <img src="img/photo-reviews-lg@1x.png" srcset="img/photo-reviews-lg@2x.png 2x" width="80" height="80" alt="Фото Анны Орловой">
                         </picture>
                       </div>
@@ -486,7 +490,7 @@
                     </div>
                   </article>
                 </li>
-                <li class="slider__item swiper-slide">
+                <li class="reviews__item swiper-slide">
                   <article class="comment">
                     <h3 class="visually-hidden">Анна Орлова</h3>
                     <div class="comment__inner">
@@ -494,7 +498,9 @@
                         <picture>
                           <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-reviews-sm@1x.webp, img/photo-reviews-sm@2x.webp 2x">
                           <source type="image/webp" srcset="img/photo-reviews-lg@1x.webp, img/photo-reviews-lg@2x.webp 2x">
+                          <!-- 1х: 68px; 2x: 136px -->
                           <source media="(max-width: 767px)" srcset="img/photo-reviews-sm@1x.png, img/photo-reviews-sm@2x.png 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
                           <img src="img/photo-reviews-lg@1x.png" srcset="img/photo-reviews-lg@2x.png 2x" width="80" height="80" alt="Фото Анны Орловой">
                         </picture>
                       </div>
@@ -509,7 +515,7 @@
                     </div>
                   </article>
                 </li>
-                <li class="slider__item swiper-slide">
+                <li class="reviews__item swiper-slide">
                   <article class="comment">
                     <h3 class="visually-hidden">Анна Орлова</h3>
                     <div class="comment__inner">
@@ -517,7 +523,9 @@
                         <picture>
                           <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-reviews-sm@1x.webp, img/photo-reviews-sm@2x.webp 2x">
                           <source type="image/webp" srcset="img/photo-reviews-lg@1x.webp, img/photo-reviews-lg@2x.webp 2x">
+                          <!-- 1х: 68px; 2x: 136px -->
                           <source media="(max-width: 767px)" srcset="img/photo-reviews-sm@1x.png, img/photo-reviews-sm@2x.png 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
                           <img src="img/photo-reviews-lg@1x.png" srcset="img/photo-reviews-lg@2x.png 2x" width="80" height="80" alt="Фото Анны Орловой">
                         </picture>
                       </div>
@@ -593,7 +601,7 @@
               </picture>
             </div>
             <ul class="list-reset footer__list footer-nav">
-              <li class="footer-nav__item" id="">
+              <li class="footer-nav__item">
                 <a class="footer-nav__link" href="#gym">Услуги</a>
               </li>
               <li class="footer-nav__item">
