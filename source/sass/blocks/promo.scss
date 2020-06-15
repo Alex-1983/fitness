@@ -16,6 +16,8 @@
   @media (max-width: $screen-sm) {
     padding-right: 15px;
     padding-left: 15px;
+
+    max-width: 600px;
   }
 }
 
@@ -29,7 +31,7 @@
   }
 
   @media (max-width: $screen-sm) {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
   }
 }
 
@@ -53,41 +55,14 @@
 
   width: 560px;
 
-  background-color: #ed0233;
-  background-image: url("../img/promo-bg-lg@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 280px 100%;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/promo-bg-lg@2x.jpg");
-  }
-
   @media (max-width: $screen-md) {
     margin-bottom: 30px;
     width: 100%;
-
-    background-image: url("../img/promo-bg-md@1x.jpg");
-    background-size: 399px 100%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/promo-bg-md@2x.jpg");
-    }
   }
+
 
   @media (max-width: $screen-sm) {
     display: block;
-
-    padding-bottom: 299px;
-
-    background-color: rgba(237, 2, 51, 0);
-    background-image: url("../img/promo-bg-sm@1x.jpg");
-    background-position: center bottom;
-    background-size: 290px 299px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/promo-bg-sm@2x.jpg");
-    }
   }
 }
 
@@ -98,10 +73,12 @@
   line-height: 1.1;
 
   color: $white;
-
+  background-color: #ed0233;
 
   @media (max-width: $screen-md) {
-    width: 41%;
+    flex-shrink: 0;
+
+    width: 41.1%;
   }
 
   @media (max-width: $screen-sm) {
@@ -111,8 +88,6 @@
     width: 100%;
 
     text-align: center;
-
-    background-color: #ed0233;
   }
 }
 
@@ -183,6 +158,39 @@
   &:focus {
     opacity: 0.7;
     outline: none;
+  }
+}
+
+.promo__img {
+  width: 280px;
+
+  background-image: url("../img/promo-bg-lg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/promo-bg-lg@2x.jpg");
+  }
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+
+    background-image: url("../img/promo-bg-md@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-bg-md@2x.jpg");
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    height: 299px;
+
+    background-image: url("../img/promo-bg-sm@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-bg-sm@2x.jpg");
+    }
   }
 }
 

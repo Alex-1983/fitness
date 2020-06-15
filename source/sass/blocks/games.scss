@@ -12,50 +12,16 @@
   }
 }
 
-.games__container {
+.games__inner {
   display: flex;
-
-  background-color: #ed0233;
-  background-image: url("../img/games-bg-lg@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 660px 100%;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/games-bg-lg@2x.jpg");
-  }
-
-  @media (max-width: $screen-md) {
-    width: 100%;
-
-    background-image: url("../img/games-bg-md@1x.jpg");
-    background-size: 386px 100%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/games-bg-md@2x.jpg");
-    }
-  }
 
   @media (max-width: $screen-sm) {
     display: block;
 
-    padding-bottom: 292px;
-
-    background-color: rgba(237, 2, 51, 0);
-    background-image: url("../img/games-bg-sm@1x.jpg");
-    background-position: center bottom;
-    background-size: 290px 292px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/games-bg-sm@2x.jpg");
-    }
-  }
-}
-
-.games__inner {
-  @media (max-width: $screen-sm) {
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
+
+    max-width: 600px;
   }
 }
 
@@ -79,24 +45,23 @@
 .games__text-block {
   position: relative;
 
-  padding: 83px 78px 85px;
+  padding: 83px 77px 85px;
   width: 500px;
 
   line-height: $line-height;
 
   color: $white;
-
+  background-color: #ed0233;
 
   @media (max-width: $screen-md) {
+    flex-shrink: 0;
+
     padding: 49px 45px 49px;
     width: 43%;
   }
 
   @media (max-width: $screen-sm) {
-    padding-top: 48px;
     width: 100%;
-
-    background-color: #ed0233;
   }
 }
 
@@ -140,7 +105,7 @@
 
 .games__date-container {
   margin-left: auto;
-  width: 93px;
+  width: 92px;
 
   @media (max-width: $screen-md) {
     width: 56px;
@@ -245,55 +210,30 @@
 
   background-image: url("../img/games-bg-lg@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/games-bg-lg@2x.jpg");
   }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/games-bg-lg@1x.webp");
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/games-bg-lg@2x.webp");
-  }
-
-
   @media (max-width: $screen-md) {
     width: 100%;
 
     background-image: url("../img/games-bg-md@1x.jpg");
-    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/games-bg-md@2x.jpg");
     }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/games-bg-md@1x.webp");
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/games-bg-md@2x.webp");
-    }
   }
 
   @media (max-width: $screen-sm) {
-    min-height: 292px;
+    height: 292px;
 
     background-image: url("../img/games-bg-sm@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/games-bg-sm@2x.jpg");
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/games-bg-sm@1x.webp");
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/games-bg-sm@2x.webp");
     }
   }
 }

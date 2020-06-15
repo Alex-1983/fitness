@@ -1771,42 +1771,16 @@ input[type="radio"].visually-hidden {
     .games {
       padding-top: 70px; } }
 
-.games__container {
+.games__inner {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  background-color: #ed0233;
-  background-image: url("../img/games-bg-lg@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 660px 100%; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .games__container {
-      background-image: url("../img/games-bg-lg@2x.jpg"); } }
-  @media (max-width: 1199px) {
-    .games__container {
-      width: 100%;
-      background-image: url("../img/games-bg-md@1x.jpg");
-      background-size: 386px 100%; } }
-  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-    .games__container {
-      background-image: url("../img/games-bg-md@2x.jpg"); } }
+  display: flex; }
   @media (max-width: 767px) {
-    .games__container {
+    .games__inner {
       display: block;
-      padding-bottom: 292px;
-      background-color: rgba(237, 2, 51, 0);
-      background-image: url("../img/games-bg-sm@1x.jpg");
-      background-position: center bottom;
-      background-size: 290px 292px; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .games__container {
-      background-image: url("../img/games-bg-sm@2x.jpg"); } }
-
-@media (max-width: 767px) {
-  .games__inner {
-    padding-left: 15px;
-    padding-right: 15px; } }
+      padding-right: 15px;
+      padding-left: 15px;
+      max-width: 600px; } }
 
 .games__wrap {
   display: -webkit-box;
@@ -1826,19 +1800,20 @@ input[type="radio"].visually-hidden {
 
 .games__text-block {
   position: relative;
-  padding: 83px 78px 85px;
+  padding: 83px 77px 85px;
   width: 500px;
   line-height: 1.5;
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #ed0233; }
   @media (max-width: 1199px) {
     .games__text-block {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
       padding: 49px 45px 49px;
       width: 43%; } }
   @media (max-width: 767px) {
     .games__text-block {
-      padding-top: 48px;
-      width: 100%;
-      background-color: #ed0233; } }
+      width: 100%; } }
 
 .games__text-block p {
   margin: 0;
@@ -1869,7 +1844,7 @@ input[type="radio"].visually-hidden {
 
 .games__date-container {
   margin-left: auto;
-  width: 93px; }
+  width: 92px; }
   @media (max-width: 1199px) {
     .games__date-container {
       width: 56px; } }
@@ -1948,43 +1923,25 @@ input[type="radio"].visually-hidden {
   width: 660px;
   background-image: url("../img/games-bg-lg@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .games__img {
       background-image: url("../img/games-bg-lg@2x.jpg"); } }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .games__img {
-      background-image: url("../img/games-bg-lg@1x.webp"); } }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .games__img {
-      background-image: url("../img/games-bg-lg@2x.webp"); } }
   @media (max-width: 1199px) {
     .games__img {
       width: 100%;
-      background-image: url("../img/games-bg-md@1x.jpg");
-      background-position: center; } }
+      background-image: url("../img/games-bg-md@1x.jpg"); } }
   @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
     .games__img {
       background-image: url("../img/games-bg-md@2x.jpg"); } }
-  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-    .games__img {
-      background-image: url("../img/games-bg-md@1x.webp"); } }
-  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-    .games__img {
-      background-image: url("../img/games-bg-md@2x.webp"); } }
   @media (max-width: 767px) {
     .games__img {
-      min-height: 292px;
+      height: 292px;
       background-image: url("../img/games-bg-sm@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .games__img {
       background-image: url("../img/games-bg-sm@2x.jpg"); } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .games__img {
-      background-image: url("../img/games-bg-sm@1x.webp"); } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .games__img {
-      background-image: url("../img/games-bg-sm@2x.webp"); } }
 
 .coach {
   padding-top: 20px;
@@ -2550,7 +2507,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .promo__inner {
     padding-right: 15px;
-    padding-left: 15px; } }
+    padding-left: 15px;
+    max-width: 600px; } }
 
 .promo h2 {
   margin-bottom: 52px;
@@ -2560,7 +2518,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 41px; } }
   @media (max-width: 767px) {
     .promo h2 {
-      margin-bottom: 43px; } }
+      margin-bottom: 42px; } }
 
 .promo__container {
   display: -webkit-box;
@@ -2583,52 +2541,33 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 560px;
-  background-color: #ed0233;
-  background-image: url("../img/promo-bg-lg@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 280px 100%; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .promo__text-wrap {
-      background-image: url("../img/promo-bg-lg@2x.jpg"); } }
+  width: 560px; }
   @media (max-width: 1199px) {
     .promo__text-wrap {
       margin-bottom: 30px;
-      width: 100%;
-      background-image: url("../img/promo-bg-md@1x.jpg");
-      background-size: 399px 100%; } }
-  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-    .promo__text-wrap {
-      background-image: url("../img/promo-bg-md@2x.jpg"); } }
+      width: 100%; } }
   @media (max-width: 767px) {
     .promo__text-wrap {
-      display: block;
-      padding-bottom: 299px;
-      background-color: rgba(237, 2, 51, 0);
-      background-image: url("../img/promo-bg-sm@1x.jpg");
-      background-position: center bottom;
-      background-size: 298px 299px; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .promo__text-wrap {
-      background-image: url("../img/promo-bg-sm@2x.jpg"); } }
+      display: block; } }
 
 .promo__text {
   padding: 39px 35px 45px 45px;
   width: 280px;
   line-height: 1.1;
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #ed0233; }
   @media (max-width: 1199px) {
     .promo__text {
-      width: 41%; } }
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 41.1%; } }
   @media (max-width: 767px) {
     .promo__text {
       padding-top: 40px;
       padding-right: 50px;
       padding-left: 50px;
       width: 100%;
-      text-align: center;
-      background-color: #ed0233; } }
+      text-align: center; } }
 
 .promo__text span {
   display: block;
@@ -2677,6 +2616,30 @@ input[type="radio"].visually-hidden {
   .promo__link:hover, .promo__link:focus {
     opacity: 0.7;
     outline: none; }
+
+.promo__img {
+  width: 280px;
+  background-image: url("../img/promo-bg-lg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo__img {
+      background-image: url("../img/promo-bg-lg@2x.jpg"); } }
+  @media (max-width: 1199px) {
+    .promo__img {
+      width: 100%;
+      background-image: url("../img/promo-bg-md@1x.jpg"); } }
+  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+    .promo__img {
+      background-image: url("../img/promo-bg-md@2x.jpg"); } }
+  @media (max-width: 767px) {
+    .promo__img {
+      height: 299px;
+      background-image: url("../img/promo-bg-sm@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .promo__img {
+      background-image: url("../img/promo-bg-sm@2x.jpg"); } }
 
 .promo__list {
   margin-left: auto;
