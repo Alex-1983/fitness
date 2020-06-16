@@ -169,7 +169,19 @@
             <p>Ежегодные соревнования по CrossFit</p>
             <a class="btn games__link" href="#">Заполнить заявку</a>
           </div>
-          <div class="games__img"></div>
+          <div class="games__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/games-bg-sm@1x.webp, img/games-bg-sm@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/games-bg-md@1x.webp, img/games-bg-md@2x.webp 2x">
+              <source type="image/webp" srcset="img/games-bg-lg@1x.webp, img/games-bg-lg@2x.webp 2x">
+              <!-- 1х: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/games-bg-sm@1x.jpg, img/games-bg-sm@2x.jpg 2x">
+              <!-- 1х: 386px; 2x: 772px -->
+              <source media="(max-width: 1199px)" srcset="img/games-bg-md@1x.jpg, img/games-bg-md@2x.jpg 2x">
+              <!-- 1х: 660px; 2x: 1320px -->
+              <img src="img/games-bg-lg@1x.jpg" srcset="img/games-bg-lg@2x.jpg 2x" width="1160" height="500" alt="Изображение мужчины">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="coach" id="coach">
@@ -443,7 +455,19 @@
                 <p>Безлимитный абонемент в тренажерный зал</p>
                 <a class="btn promo__link" href="#">Подробнее</a>
               </div>
-              <div class="promo__img"></div>
+              <div class="promo__img">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-bg-sm@1x.webp, img/promo-bg-sm@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-bg-md@1x.webp, img/promo-bg-md@2x.webp 2x">
+                  <source type="image/webp" srcset="img/promo-bg-lg@1x.webp, img/promo-bg-lg@2x.webp 2x">
+                  <!-- 1х: 290px; 2x: 580px -->
+                  <source media="(max-width: 767px)" srcset="img/promo-bg-sm@1x.jpg, img/promo-bg-sm@2x.jpg 2x">
+                  <!-- 1х: 399px; 2x: 798px -->
+                  <source media="(max-width: 1199px)" srcset="img/promo-bg-md@1x.jpg, img/promo-bg-md@2x.jpg 2x">
+                  <!-- 1х: 280px; 2x: 560px -->
+                  <img src="img/promo-bg-lg@1x.jpg" srcset="img/promo-bg-lg@2x.jpg 2x" width="280" height="462" alt="Изображение девушки">
+                </picture>
+              </div>
             </div>
             <ul class="list-reset promo__list">
               <li class="promo__item">

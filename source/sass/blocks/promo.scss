@@ -1,9 +1,10 @@
 .promo {
   padding-top: 118px;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
 
   @media (max-width: $screen-md) {
     padding-top: 99px;
+    padding-bottom: 51px;
   }
 
   @media (max-width: $screen-sm) {
@@ -16,7 +17,6 @@
   @media (max-width: $screen-sm) {
     padding-right: 15px;
     padding-left: 15px;
-
     max-width: 600px;
   }
 }
@@ -56,10 +56,9 @@
   width: 560px;
 
   @media (max-width: $screen-md) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     width: 100%;
   }
-
 
   @media (max-width: $screen-sm) {
     display: block;
@@ -67,7 +66,9 @@
 }
 
 .promo__text {
-  padding: 39px 35px 45px 45px;
+  display: flex;
+  flex-direction: column;
+  padding: 39px 35px 50px 45px;
   width: 280px;
 
   line-height: 1.1;
@@ -77,14 +78,13 @@
 
   @media (max-width: $screen-md) {
     flex-shrink: 0;
-
     width: 41.1%;
   }
 
   @media (max-width: $screen-sm) {
-    padding-top: 40px;
-    padding-right: 50px;
-    padding-left: 50px;
+    display: block;
+    padding: 40px 50px 47px;
+
     width: 100%;
 
     text-align: center;
@@ -111,7 +111,6 @@
 
 .promo__text p {
   margin: 0;
-  margin-bottom: 189px;
   padding: 0;
 
   font-size: 18px;
@@ -125,6 +124,10 @@
 
 .promo__link {
   position: relative;
+  margin-top: auto;
+
+  width: 79px;
+
 
   font-size: 14px;
   font-weight: 700;
@@ -162,35 +165,22 @@
 }
 
 .promo__img {
-  width: 280px;
-
-  background-image: url("../img/promo-bg-lg@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/promo-bg-lg@2x.jpg");
+  @media (max-width: $screen-md) {
+    width: 100%;
   }
+}
+
+.promo__img img {
+  width: 280px;
+  height: 100%;
+
+  font-family: "object-fit: cover"; /*stylelint-disable*/
+
+  object-fit: cover;
+  object-position: top center;
 
   @media (max-width: $screen-md) {
     width: 100%;
-
-    background-image: url("../img/promo-bg-md@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/promo-bg-md@2x.jpg");
-    }
-  }
-
-  @media (max-width: $screen-sm) {
-    height: 299px;
-
-    background-image: url("../img/promo-bg-sm@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/promo-bg-sm@2x.jpg");
-    }
   }
 }
 

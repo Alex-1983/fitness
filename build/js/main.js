@@ -161,4 +161,7 @@
   }
 
 
+/*eslint-disable*/
+objectFitImages();
+
 })();
