@@ -2608,7 +2608,7 @@ input[type="radio"].visually-hidden {
 .promo__link {
   position: relative;
   margin-top: auto;
-  width: 79px;
+  width: 80px;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -2616,6 +2616,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #ffffff;
   border-bottom: 1px solid #ffffff; }
+  @media (max-width: 767px) {
+    .promo__link {
+      width: auto; } }
   .promo__link--blue {
     margin-top: auto;
     width: 68px;

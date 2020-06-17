@@ -126,8 +126,7 @@
   position: relative;
   margin-top: auto;
 
-  width: 79px;
-
+  width: 80px;
 
   font-size: 14px;
   font-weight: 700;
@@ -138,6 +137,10 @@
 
   color: $white;
   border-bottom: 1px solid $white;
+
+  @media (max-width: $screen-sm) {
+    width: auto;
+  }
 
   &--blue {
     margin-top: auto;
